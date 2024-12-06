@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="container">
+  <header>
+    <div >
+        <img src="images/logo.svg">
+    </div>
+    
+        <div class="setting" >
+            <p class="container">Feautures</p>
+            <p class="container">Team</p>
+            <p class="container">Sign In</p>
+        </div>
+    
+  </header>
+
+  <div class="container1">
+          <div>
+             <h1>
+                   All your files in one secure
+                   <br> location, accessible anywhere.
+             </h1>
+             <p>
+              Fylo stores your most importnat files in one secure location. Access 
+              <br> them wherever you need, share and collaborate with friends, family, <br> and co-workers.  
+             </p>
+               <div>
+                  <input type="text" id="email" placeholder="Enter email here" class="input">
+                  <button onclick="validateEmail()" id="button1">Get Started</button>
+               </div>
+               <div id="message" class="message"></div>
+           </div>
+           <div style="max-width: 50%;">
+              <img src="images/illustration-1.svg" class="container1">
+          </div>
+  </div>
+</div>
+<img src="images/bg-curve-desktop.svg" alt="" style="margin-bottom: -45px;transform: translateX(165px);">
+<div class="container2">
+  <div class="container3">
+          <div >
+             <h1 >
+                  Stay productive, wherever you are
+             </h1>
+             <p >
+              Never let location be an issue when accessing your files. Fylo has you <br>
+              covered for all of your file needs. <br> <br>
+              Securely share files and folders with friends, family and colleagues for <br>
+              live collaboration. No email attachments required!  
+             </p>
+               <div style="font-size: 17px;">
+                 <button class="button5">
+                   See how Fylo works
+                   <img src="images/icon-arrow.svg"> 
+                 </button>
+               </div>
+               <div class="styled-box">
+                <img src="images/icon-quotes.svg" style="width: 15px;">
+                      <p>Fylo has improved our team productivity by <br> 
+                      an order of magnitude. Since making the <br>
+                    switch our team has become a well-oiled <br>
+                  collaboration machine</p>
+                  <div style="display: flex;align-items: center;" >
+            
+                    <img src="images/avatar-testimonial.jpg" style="border-radius: 50px;width:37px;height: 37px;">
+                    <div>
+                        <h2 style="font-size: 15px;padding-left: 4px;">Kyle Burton</h2>
+                        <p style="margin: 0;font-size: 12px;transform: translateY(-15px);text-wrap: balance;color: grey;padding-left: 4px;">Founder & CEO, huddle</p>
+                    </div>
+                </div>
+               </div>
+               </div>
+               <div style="max-width: 50%;">
+                      <img src="images/illustration-2.svg" class="container10">
+               </div>  
+          </div>
+</div>
+
+
+
+<div class="container4">
+  <div style="font-size: 25px;">
+    <h1 >Get early access today </h1>
+    <p >It only takes a minute to sign up and our free starter tier is <br>
+    extremely generous. If you have any questions, our support team <br>
+  would be happy to help you.</p>
+  </div>
+  <div class="container5">
+    <input type="text" placeholder="Enter your email" id="email2"> 
+    <button onclick="validateEmail2()" type="submit" class="button3">Get Started For Free</button>
+    <div id="message2" class="message2"></div>
+  </div>
+  </div>
+
+  <div class="container6">
+    <img src="images/logo.svg" style="color: white;padding-bottom: 44px;">
+    <div class="container7">
+    <div class="container8">
+     <div style="display: ruby;">
+         <img src="images/icon-phone.svg" style="width: 19px;margin-right: 1rem;"> 
+         <p>Phone +1-543-123-4567</p>
+     </div>
+     <div style="display: ruby;">
+         <img src="images/icon-email.svg" style="margin-right: 1rem;"> 
+         <p>example@hotmail.com</p>
+     </div>
+
+   </div>
+
+
+   <div class="container8">
+    <div style="display: ruby;">
+        <button class="button2">About Us</button>
+    </div>
+    <div style="display: ruby;">
+      <button class="button2" >Jobs</button>
+    </div>
+    <div style="display: ruby;">
+      <button class="button2" >Press</button>
+    </div>
+    <div style="display: ruby;">
+      <button class="button2" >Blog</button>
+    </div>
+  </div>
+
+  <div class="container8">
+    <div style="display: ruby;">
+      <button class="button2" >Contact Us</button>
+    </div>
+    <div style="display: ruby;">
+      <button class="button2" >Terms</button>
+    </div>
+    <div style="display: ruby;">
+      <button class="button2" >Privecy</button>
+    </div>
+  </div>
+
+  <div class="container9">
+    <div style="display: ruby;">
+      <img src="images/r.png" alt="Facebook" class="circle-icon">
+    </div>
+    <div style="display: ruby;">
+      <img src="images/Popular-Logo-facebook-icon-png.png" alt="Facebook" class="circle-icon">
+    </div>
+    <div style="display: ruby;">
+      <img src="images/Popular-Logo-facebook-icon-png.png" alt="Facebook" class="circle-icon">
+    </div>
+  </div>
+  
+
+</div>
+  
+ </div>
+ <script>
+  function validateEmail() {
+      
+      const emailInput = document.getElementById('email');
+      const messageDiv = document.getElementById('message');
+      
+      
+      messageDiv.textContent = "";
+      emailInput.classList.remove('invalid');
+      
+      
+      if (!emailInput.value.includes('@')) {
+          
+          emailInput.classList.add('invalid');
+          messageDiv.textContent = "Please check your email";
+      } else {
+          
+          emailInput.classList.remove('invalid');
+          messageDiv.textContent = "Email is valid!";
+      }
+  }
+
+  function validateEmail2() {
+      
+      const emailInput = document.getElementById('email2');
+      const messageDiv = document.getElementById('message2');
+      
+      
+      messageDiv.textContent = "";
+      emailInput.classList.remove('invalid');
+      
+      
+      if (!emailInput.value.includes('@')) {
+          
+          emailInput.classList.add('invalid');
+          messageDiv.textContent = "Please check your email";
+      } else {
+          
+          emailInput.classList.remove('invalid');
+          messageDiv.textContent = "Email is valid!";
+      }
+  }
+</script>
+</body>
+</html>
